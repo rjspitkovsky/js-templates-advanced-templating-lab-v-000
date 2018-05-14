@@ -41,7 +41,7 @@ function createRecipe() {
 
   const template = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 
-  document.getElementById("main").innerHTML = template({name, ingredients, description})
+  document.getElementById("recipe").innerHTML = template({name, ingredients, description})
 }
 
 function updateRecipe() {
